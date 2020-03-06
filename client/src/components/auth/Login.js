@@ -56,7 +56,7 @@ return (
               <h4>
                 <b>Login</b> below
               </h4>
-              <p className="grey-text text-darken-1">
+              <p className="black-text text-darken-3">
                 Don't have an account? <Link to="/register">Register</Link>
               </p>
             </div>
