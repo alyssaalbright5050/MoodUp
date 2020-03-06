@@ -5,16 +5,16 @@ class Navbar extends Component {
     return (
       <div className="navbar-fixed">
         <nav className="z-depth-0">
-          <div className="nav-wrapper white">
+          <div className="nav-wrapper blue">
             <Link
               to="/"
               style={{
-                fontFamily: "monospace"
+                fontFamily: 'Rum Raisin', fontSize: 40,
               }}
               className="col s5 brand-logo center black-text"
             >
-              <i className="material-icons">code</i>
-              MERN
+              <i className="material-icons"></i>
+              Mood Up!
             </Link>
           </div>
         </nav>
