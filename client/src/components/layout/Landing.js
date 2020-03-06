@@ -7,11 +7,11 @@ class Landing extends Component {
         <div className="row">
           <div className="col s12 center-align">
             <h4>
-              <b>MoodUp</b> {" "}
-              <span style={{ fontFamily: "monospace" }}>Mood Up</span> 
+              <b>When you are feeling Down, MoodUp!</b> {" "}
+              <span style={{ fontFamily: "Rum Raisin", fontSize: "50px" }}></span> 
             </h4>
-            <p className="flow-text grey-text text-darken-1">
-              When you are feeling Down, MoodUp!
+            <p className="flow-text blue-text text-darken-1">
+              How are you feeling today?
             </p>
             <br />
             <div className="col s6">
@@ -35,7 +35,7 @@ class Landing extends Component {
                   borderRadius: "3px",
                   letterSpacing: "1.5px"
                 }}
-                className="btn btn-large btn-flat waves-effect white black-text"
+                className="btn btn-large waves-effect waves-light hoverable blue accent-3"
               >
                 Log In
               </Link>
