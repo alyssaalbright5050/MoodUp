@@ -43,7 +43,11 @@ router.post("/register", (req, res) => {
     });
   });
 
-  // @route POST api/users/login
+ <<<<<<< dev
+   // @route POST api/users/login
+ =======
+   // @route POST api/users/login
+ >>>>>>> master
 // @desc Login user and return JWT token
 // @access Public
 router.post("/login", (req, res) => {
@@ -93,4 +97,8 @@ const email = req.body.email;
   });
 });
 
+ <<<<<<< dev 
+=======
+
+  >>>>>>> master
   module.exports = router;
