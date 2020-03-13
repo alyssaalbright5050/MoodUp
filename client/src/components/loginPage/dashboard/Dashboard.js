@@ -26,165 +26,165 @@ return (
                 Answer a Few Questions About How You Are Feeling Today: {" "}</p>
   {/* First Question             */}
   <div className="flow-text dark blue-text text-darken-1">
-              <div style={{ height: "1vh" }} class="row">
+              <div style={{ height: "1vh" }} className="row">
                 <div className="col s12 center-align">
                   <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Day Overall:</span>
                 </div>
               </div>
-              <div  id="OneSaddest" class="row">
-                <div class="col s1"></div>
-                <div class="col s2">
+              <div  id="OneSaddest" className="row">
+                <div className="col s1"></div>
+                <div className="col s2">
                   <img src={require("../images/saddest.JPEG")} alt="Saddest" style={{ width: "125", height: "125px", margin: "3px" }} />
                 </div>
-                <div id="OneSad" class="col s2">
+                <div id="OneSad" className="col s2">
                   <img src={require("../images/slightlysad.JPEG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="A little Sad" />
                 </div>
-                <div id="OneNeutral" class="col s2">
+                <div id="OneNeutral" className="col s2">
                   <img src={require("../images/neutralface.JPEG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="Neutral" />
                 </div>
-                <div id="OneHappy" class="col s2">
+                <div id="OneHappy" className="col s2">
                   <img src={require("../images/slightlyhappy.JPEG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="A bit Happy" />
                 </div>
-                <div id="OneHappiest" class="col s2">
+                <div id="OneHappiest" className="col s2">
                   <img src={require("../images/happiest.JPEG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="Happiest" />
                 </div>
-                <div class="col s1"> </div>
+                <div className="col s1"> </div>
               </div>
               </div>
 {/* Second Question */}
 <div className="flow-text dark blue-text text-darken-1">
-                <div style={{ height: "1vh" }}class="row">
+                <div style={{ height: "1vh" }}className="row">
                   <div className="col s12 center-align">
                     <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Happiness Level:</span>
                   </div>
                 </div>
-                <div id="TwoSaddest"class="row">
-                  <div class="col s1"></div>
-                  <div class="col s2">
+                <div id="TwoSaddest"className="row">
+                  <div className="col s1"></div>
+                  <div className="col s2">
                     <img src={require("../images/saddest.JPEG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
                   </div>
-                  <div id="TwoSad" class="col s2">
+                  <div id="TwoSad" className="col s2">
                     <img src={require("../images/slightlysad.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
                   </div>
-                  <div id="TwoNeutral"class="col s2">
+                  <div id="TwoNeutral"className="col s2">
                     <img src={require("../images/neutralface.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
                   </div>
-                  <div id="TwoHappy" class="col s2">
+                  <div id="TwoHappy" className="col s2">
                     <img src={require("../images/slightlyhappy.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
                   </div>
-                  <div id="TwoHappiest"class="col s2">
+                  <div id="TwoHappiest"className="col s2">
                     <img src={require("../images/happiest.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
-                  <div class="col s1"> </div>
+                  <div className="col s1"> </div>
                 </div>
                 </div>
 {/* Third Question */}
 
 <div className="flow-text dark blue-text text-darken-1">
-                <div style={{ height: "1vh" }}class="row">
+                <div style={{ height: "1vh" }}className="row">
                   <div className="col s12 center-align">
                     <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Stress Level:</span>
                   </div>
                 </div>
-                <div id="ThirdSaddest"class="row">
-                  <div class="col s1"></div>
-                  <div class="col s2">
+                <div id="ThirdSaddest"className="row">
+                  <div className="col s1"></div>
+                  <div className="col s2">
                     <img src={require("../images/saddest.JPEG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
                   </div>
-                  <div id="ThirdSad" class="col s2">
+                  <div id="ThirdSad" className="col s2">
                     <img src={require("../images/slightlysad.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
                   </div>
-                  <div id="ThirdNeutral"class="col s2">
+                  <div id="ThirdNeutral"className="col s2">
                     <img src={require("../images/neutralface.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
                   </div>
-                  <div id="ThirdHappy" class="col s2">
+                  <div id="ThirdHappy" className="col s2">
                     <img src={require("../images/slightlyhappy.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
                   </div>
-                  <div id="ThirdHappiest"class="col s2">
+                  <div id="ThirdHappiest"className="col s2">
                     <img src={require("../images/happiest.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
-                  <div class="col s1"> </div>
+                  <div className="col s1"> </div>
                 </div>
                 </div>
 
   {/* Fourth Question */}
 
   <div className="flow-text dark blue-text text-darken-1">
-                <div style={{ height: "1vh" }}class="row">
+                <div style={{ height: "1vh" }}className="row">
                   <div className="col s12 center-align">
                     <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Energy Level:</span>
                   </div>
                 </div>
-                <div id="FourthSaddest"class="row">
-                  <div class="col s1"></div>
-                  <div class="col s2">
+                <div id="FourthSaddest"className="row">
+                  <div className="col s1"></div>
+                  <div className="col s2">
                     <img src={require("../images/saddest.JPEG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
                   </div>
-                  <div id="FourthSad" class="col s2">
+                  <div id="FourthSad" className="col s2">
                     <img src={require("../images/slightlysad.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
                   </div>
-                  <div id="FourthNeutral"class="col s2">
+                  <div id="FourthNeutral"className="col s2">
                     <img src={require("../images/neutralface.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
                   </div>
-                  <div id="FourthHappy" class="col s2">
+                  <div id="FourthHappy" className="col s2">
                     <img src={require("../images/slightlyhappy.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
                   </div>
-                  <div id="FourthHappiest"class="col s2">
+                  <div id="FourthHappiest"className="col s2">
                     <img src={require("../images/happiest.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
-                  <div class="col s1"> </div>
+                  <div className="col s1"> </div>
                 </div>
                 </div>
 
  {/* Fifth Question */}
 
  <div className="flow-text dark blue-text text-darken-1">
-                <div style={{ height: "1vh" }}class="row">
+                <div style={{ height: "1vh" }}className="row">
                   <div className="col s12 center-align">
                     <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>How Well Did You Sleep Last Night:</span>
                   </div>
                 </div>
-                <div id="FifthSaddest"class="row">
-                  <div class="col s1"></div>
-                  <div class="col s2">
+                <div id="FifthSaddest"className="row">
+                  <div className="col s1"></div>
+                  <div className="col s2">
                     <img src={require("../images/saddest.JPEG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
                   </div>
-                  <div id="FifthSad" class="col s2">
+                  <div id="FifthSad" className="col s2">
                     <img src={require("../images/slightlysad.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
                   </div>
-                  <div id="FifthNeutral"class="col s2">
+                  <div id="FifthNeutral"className="col s2">
                     <img src={require("../images/neutralface.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
                   </div>
-                  <div id="FifthHappy" class="col s2">
+                  <div id="FifthHappy" className="col s2">
                     <img src={require("../images/slightlyhappy.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
                   </div>
-                  <div id="FifthHappiest"class="col s2">
+                  <div id="FifthHappiest"className="col s2">
                     <img src={require("../images/happiest.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
-                  <div class="col s1"> </div>
+                  <div className="col s1"> </div>
                 </div>
                 </div>
   {/* Sixth Question            */}
 
   <div className="flow-text dark blue-text text-darken-1">
-                <div style={{ height: "1vh" }}class="row">
+                <div style={{ height: "1vh" }}className="row">
                   <div className="col s12 center-align">
                     <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Have You Worked Out in the last 24 Hours?</span>
                   </div>
                 </div>
-                <div id="SixthYes"class="row">
-                  <div class="col s3"></div>
+                <div id="SixthYes"className="row">
+                  <div className="col s3"></div>
 
-                  <div class="col s2">
+                  <div className="col s2">
                     <img src={require("../images/thumbsup.JPEG")} alt="Yes" style={{width: "125", height: "125px", margin: "3px"}} /> 
                   </div>
-                  <div id="FifthSad" class="col s1"></div>
+                  <div id="FifthSad" className="col s1"></div>
 
-                  <div id="FifthNeutral"class="col s2">
+                  <div id="FifthNeutral"className="col s2">
                     <img src={require("../images/thumbsdown.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="NO" />
                   </div>
                   
-                  <div class="col s3"> </div>
+                  <div className="col s3"> </div>
                 </div>
                 </div>
             </h4>
