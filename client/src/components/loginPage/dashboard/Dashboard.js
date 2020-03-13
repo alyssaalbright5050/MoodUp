@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
+import { tracking } from "./tracking.js";
 
 
 class Dashboard extends Component {
@@ -217,3 +218,5 @@ export default connect(
   mapStateToProps,
   { logoutUser }
 )(Dashboard);
+
+module.exports = Dashboard; 
