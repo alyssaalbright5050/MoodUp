@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
 import { tracking } from "./tracking.js";
+import "./style.css";
+
 
 
 class Dashboard extends Component {
@@ -14,7 +16,8 @@ render() {
     const { user } = this.props.auth;
 return (
   <div style={{ background: "White" }}className="container"> 
-      <div style={{ height: "200vh", color: "blue" }} className="container valign-wrapper">
+      <div style={{ height: "200vh", width: "200vh",
+        margin: "10px 25px", color: "blue" }} className="container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
             <h4>
@@ -22,21 +25,18 @@ return (
               <p className="flow-text black-text text-darken-1">
                 Answer a Few Questions About How You Are Feeling Today: {" "}</p>
   {/* First Question             */}
-            <p className="flow-text dark blue-text text-darken-1">
+  <div className="flow-text dark blue-text text-darken-1">
               <div style={{ height: "1vh" }} class="row">
                 <div className="col s12 center-align">
-                  <span style={{ fontFamily: "monospace" }}>Rate Your Day Overall:</span>
+                  <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Day Overall:</span>
                 </div>
               </div>
-              <div id="OneSaddest" class="row">
+              <div  id="OneSaddest" class="row">
                 <div class="col s1"></div>
                 <div class="col s2">
                   <img src={require("../images/saddest.JPEG")} alt="Saddest" style={{ width: "125", height: "125px", margin: "3px" }} />
                 </div>
-                <div style={{
-                  width: "120px", height: "120px", borderStyle: "solid", borderWidth: "3px", borderColor: "blue", 
-                  webkitBoxShadow: "0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22)"
-                }} id="OneSad" class="col s2">
+                <div id="OneSad" class="col s2">
                   <img src={require("../images/slightlysad.JPEG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="A little Sad" />
                 </div>
                 <div id="OneNeutral" class="col s2">
@@ -50,12 +50,12 @@ return (
                 </div>
                 <div class="col s1"> </div>
               </div>
-            </p>
+              </div>
 {/* Second Question */}
-              <p className="flow-text dark blue-text text-darken-1">
+<div className="flow-text dark blue-text text-darken-1">
                 <div style={{ height: "1vh" }}class="row">
                   <div className="col s12 center-align">
-                    <span style={{ fontFamily: "monospace" }}>Rate Your Happiness Level:</span>
+                    <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Happiness Level:</span>
                   </div>
                 </div>
                 <div id="TwoSaddest"class="row">
@@ -77,13 +77,13 @@ return (
                   </div>
                   <div class="col s1"> </div>
                 </div>
-              </p>
+                </div>
 {/* Third Question */}
 
-<p className="flow-text dark blue-text text-darken-1">
+<div className="flow-text dark blue-text text-darken-1">
                 <div style={{ height: "1vh" }}class="row">
                   <div className="col s12 center-align">
-                    <span style={{ fontFamily: "monospace" }}>Rate Your Stress Level:</span>
+                    <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Stress Level:</span>
                   </div>
                 </div>
                 <div id="ThirdSaddest"class="row">
@@ -105,14 +105,14 @@ return (
                   </div>
                   <div class="col s1"> </div>
                 </div>
-              </p>
+                </div>
 
   {/* Fourth Question */}
 
-<p className="flow-text dark blue-text text-darken-1">
+  <div className="flow-text dark blue-text text-darken-1">
                 <div style={{ height: "1vh" }}class="row">
                   <div className="col s12 center-align">
-                    <span style={{ fontFamily: "monospace" }}>Rate Your Energy Level:</span>
+                    <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Energy Level:</span>
                   </div>
                 </div>
                 <div id="FourthSaddest"class="row">
@@ -134,14 +134,14 @@ return (
                   </div>
                   <div class="col s1"> </div>
                 </div>
-              </p>
+                </div>
 
  {/* Fifth Question */}
 
-<p className="flow-text dark blue-text text-darken-1">
+ <div className="flow-text dark blue-text text-darken-1">
                 <div style={{ height: "1vh" }}class="row">
                   <div className="col s12 center-align">
-                    <span style={{ fontFamily: "monospace" }}>How Well Did You Sleep Last Night:</span>
+                    <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>How Well Did You Sleep Last Night:</span>
                   </div>
                 </div>
                 <div id="FifthSaddest"class="row">
@@ -163,13 +163,13 @@ return (
                   </div>
                   <div class="col s1"> </div>
                 </div>
-              </p>
+                </div>
   {/* Sixth Question            */}
 
-  <p className="flow-text dark blue-text text-darken-1">
+  <div className="flow-text dark blue-text text-darken-1">
                 <div style={{ height: "1vh" }}class="row">
                   <div className="col s12 center-align">
-                    <span style={{ fontFamily: "monospace" }}>Have You Worked Out in the last 24 Hours?</span>
+                    <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Have You Worked Out in the last 24 Hours?</span>
                   </div>
                 </div>
                 <div id="SixthYes"class="row">
@@ -186,8 +186,23 @@ return (
                   
                   <div class="col s3"> </div>
                 </div>
-              </p>
+                </div>
             </h4>
+            
+           
+            <button
+              style={{
+                width: "150px",
+                borderRadius: "3px",
+                letterSpacing: "1.5px",
+                marginTop: "1rem"
+              }}
+              onClick={this.onJournalClick}
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+            >
+              Journal
+            </button>
+            <div>  </div>
             <button
               style={{
                 width: "150px",
@@ -219,4 +234,4 @@ export default connect(
   { logoutUser }
 )(Dashboard);
 
-module.exports = Dashboard; 
+//module.exports = Dashboard; 
