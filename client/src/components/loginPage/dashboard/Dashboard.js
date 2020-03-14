@@ -241,7 +241,6 @@ export default connect(
 <script>
   function captureScore()
   {
-    console.log("you can see this!!");
-    console.log(data-score);
+    console.log("you can see this!!")
  }
 </script>
