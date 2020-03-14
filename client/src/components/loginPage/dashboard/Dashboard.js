@@ -34,19 +34,19 @@ return (
               <div  id="OneSaddest" class="row">
                 <div class="col s1"></div>
                 <div class="col s2">
-                  <img src={require("../images/saddest.JPEG")} alt="Saddest" style={{ width: "125", height: "125px", margin: "3px" }} />
+                  <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{ width: "125", height: "125px", margin: "3px" }} />
                 </div>
                 <div id="OneSad" class="col s2">
-                  <img src={require("../images/slightlysad.JPEG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="A little Sad" />
+                  <img src={require("../images/sad2.JPG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="A little Sad" />
                 </div>
                 <div id="OneNeutral" class="col s2">
-                  <img src={require("../images/neutralface.JPEG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="Neutral" />
+                  <img src={require("../images/neutral2.JPG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="Neutral" />
                 </div>
                 <div id="OneHappy" class="col s2">
-                  <img src={require("../images/slightlyhappy.JPEG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="A bit Happy" />
+                  <img src={require("../images/happy2.JPG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="A bit Happy" />
                 </div>
                 <div id="OneHappiest" class="col s2">
-                  <img src={require("../images/happiest.JPEG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="Happiest" />
+                  <img src={require("../images/happiest2.JPG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="Happiest" />
                 </div>
                 <div class="col s1"> </div>
               </div>
@@ -61,19 +61,19 @@ return (
                 <div id="TwoSaddest"class="row">
                   <div class="col s1"></div>
                   <div class="col s2">
-                    <img src={require("../images/saddest.JPEG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
+                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
                   </div>
                   <div id="TwoSad" class="col s2">
-                    <img src={require("../images/slightlysad.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
+                    <img src={require("../images/sad2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
                   </div>
                   <div id="TwoNeutral"class="col s2">
-                    <img src={require("../images/neutralface.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
+                    <img src={require("../images/neutral2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
                   </div>
                   <div id="TwoHappy" class="col s2">
-                    <img src={require("../images/slightlyhappy.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
+                    <img src={require("../images/happy2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
                   </div>
                   <div id="TwoHappiest"class="col s2">
-                    <img src={require("../images/happiest.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
+                    <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
                   <div class="col s1"> </div>
                 </div>
@@ -89,19 +89,19 @@ return (
                 <div id="ThirdSaddest"class="row">
                   <div class="col s1"></div>
                   <div class="col s2">
-                    <img src={require("../images/saddest.JPEG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
+                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
                   </div>
                   <div id="ThirdSad" class="col s2">
-                    <img src={require("../images/slightlysad.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
+                    <img src={require("../images/sad2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
                   </div>
                   <div id="ThirdNeutral"class="col s2">
-                    <img src={require("../images/neutralface.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
+                    <img src={require("../images/neutral2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
                   </div>
                   <div id="ThirdHappy" class="col s2">
-                    <img src={require("../images/slightlyhappy.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
+                    <img src={require("../images/happy2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
                   </div>
                   <div id="ThirdHappiest"class="col s2">
-                    <img src={require("../images/happiest.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
+                    <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
                   <div class="col s1"> </div>
                 </div>
@@ -118,19 +118,19 @@ return (
                 <div id="FourthSaddest"class="row">
                   <div class="col s1"></div>
                   <div class="col s2">
-                    <img src={require("../images/saddest.JPEG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
+                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
                   </div>
                   <div id="FourthSad" class="col s2">
-                    <img src={require("../images/slightlysad.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
+                    <img src={require("../images/sad2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
                   </div>
                   <div id="FourthNeutral"class="col s2">
-                    <img src={require("../images/neutralface.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
+                    <img src={require("../images/neutral2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
                   </div>
                   <div id="FourthHappy" class="col s2">
-                    <img src={require("../images/slightlyhappy.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
+                    <img src={require("../images/happy2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
                   </div>
                   <div id="FourthHappiest"class="col s2">
-                    <img src={require("../images/happiest.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
+                    <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
                   <div class="col s1"> </div>
                 </div>
@@ -147,19 +147,19 @@ return (
                 <div id="FifthSaddest"class="row">
                   <div class="col s1"></div>
                   <div class="col s2">
-                    <img src={require("../images/saddest.JPEG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
+                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
                   </div>
                   <div id="FifthSad" class="col s2">
-                    <img src={require("../images/slightlysad.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
+                    <img src={require("../images/sad2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
                   </div>
                   <div id="FifthNeutral"class="col s2">
-                    <img src={require("../images/neutralface.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
+                    <img src={require("../images/neutral2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
                   </div>
                   <div id="FifthHappy" class="col s2">
-                    <img src={require("../images/slightlyhappy.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
+                    <img src={require("../images/happy2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
                   </div>
                   <div id="FifthHappiest"class="col s2">
-                    <img src={require("../images/happiest.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
+                    <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
                   <div class="col s1"> </div>
                 </div>
@@ -189,7 +189,9 @@ return (
                 </div>
             </h4>
             
-           
+            <div style={{ height: "1vh" }}class="row">  
+            
+            <div class="col s2">
             <button
               style={{
                 width: "150px",
@@ -202,7 +204,10 @@ return (
             >
               Journal
             </button>
-            <div>  </div>
+            </div>
+            <div class="col s6"></div>
+
+            <div class="col s2"> 
             <button
               style={{
                 width: "150px",
@@ -215,8 +220,10 @@ return (
             >
               Logout
             </button>
+            </div>
           </div>
         </div>
+      </div>
       </div>
       </div>
     );
