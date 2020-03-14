@@ -13,8 +13,8 @@ render() {
     const { user } = this.props.auth;
 return (
   <div style={{ background: "White" }}className="center-align container"> 
-      <div style={{ height: "200vh", width: "200vh",
-        margin: "10px 25px", color: "blue" }} className="center-align container valign-wrapper">
+      <div style={{ height: "155vh", width: "135vh",
+        margin: "5px", color: "blue" }} className="center-align container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
             <h4>
@@ -31,19 +31,19 @@ return (
               <div  id="OneSaddest" data-score="0" onclick="captureScore()" class="row">
                 <div class="col s1"></div>
                 <div class="col s2">
-                  <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{ width: "125", height: "125px", margin: "3px" }} />
+                  <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{ width: "75", height: "75px", margin: "3px" }} />
                 </div>
                 <div id="OneSad" data-score="3" onclick="captureScore()" class="col s2">
-                  <img src={require("../images/sad2.JPG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="A little Sad" />
+                  <img src={require("../images/sad2.JPG")} style={{ width: "75", height: "75px", margin: "3px" }} alt="A little Sad" />
                 </div>
                 <div id="OneNeutral" data-score="5" onclick="captureScore()" class="col s2">
-                  <img src={require("../images/neutral2.JPG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="Neutral" />
+                  <img src={require("../images/neutral2.JPG")} style={{ width: "75", height: "75px", margin: "3px" }} alt="Neutral" />
                 </div>
                 <div id="OneHappy" data-score="7" onclick="captureScore()" class="col s2">
-                  <img src={require("../images/happy2.JPG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="A bit Happy" />
+                  <img src={require("../images/happy2.JPG")} style={{ width: "75", height: "75px", margin: "3px" }} alt="A bit Happy" />
                 </div>
                 <div id="OneHappiest" data-score="10" onclick="captureScore()" class="col s2">
-                  <img src={require("../images/happiest2.JPG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="Happiest" />
+                  <img src={require("../images/happiest2.JPG")} style={{ width: "75", height: "75px", margin: "3px" }} alt="Happiest" />
                 </div>
                 <div className="col s1"> </div>
               </div>
@@ -58,19 +58,19 @@ return (
                 <div id="TwoSaddest" data-score="0" onclick="captureScore()" class="row">
                   <div class="col s1"></div>
                   <div class="col s2">
-                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
+                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "75", height: "75px", margin: "3px"}} /> 
                   </div>
                   <div id="TwoSad" data-score="3" onclick="captureScore()" class="col s2">
-                    <img src={require("../images/sad2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
+                    <img src={require("../images/sad2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="A little Sad" />
                   </div>
                   <div id="TwoNeutral" data-score="5" onclick="captureScore()"class="col s2">
-                    <img src={require("../images/neutral2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
+                    <img src={require("../images/neutral2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="Neutral" />
                   </div>
                   <div id="TwoHappy" data-score="7" onclick="captureScore()" class="col s2">
-                    <img src={require("../images/happy2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
+                    <img src={require("../images/happy2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="A bit Happy" />
                   </div>
                   <div id="TwoHappiest" data-score="10" onclick="captureScore()"class="col s2">
-                    <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
+                    <img src={require("../images/happiest2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="Happiest" />
                   </div>
                   <div className="col s1"> </div>
                 </div>
@@ -86,19 +86,19 @@ return (
                 <div id="ThirdSaddest" data-score="0" onclick="captureScore()"class="row">
                   <div class="col s1"></div>
                   <div class="col s2">
-                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
+                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "75", height: "75px", margin: "3px"}} /> 
                   </div>
                   <div id="ThirdSad" data-score="3" onclick="captureScore()" class="col s2">
-                    <img src={require("../images/sad2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
+                    <img src={require("../images/sad2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="A little Sad" />
                   </div>
                   <div id="ThirdNeutral" data-score="5" onclick="captureScore()" class="col s2">
-                    <img src={require("../images/neutral2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
+                    <img src={require("../images/neutral2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="Neutral" />
                   </div>
                   <div id="ThirdHappy" data-score="7" onclick="captureScore()" class="col s2">
-                    <img src={require("../images/happy2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
+                    <img src={require("../images/happy2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="A bit Happy" />
                   </div>
                   <div id="ThirdHappiest" data-score="10" onclick="captureScore()"class="col s2">
-                    <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
+                    <img src={require("../images/happiest2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="Happiest" />
                   </div>
                   <div className="col s1"> </div>
                 </div>
@@ -115,19 +115,19 @@ return (
                 <div id="FourthSaddest" data-score="0" onclick="captureScore()"class="row">
                   <div class="col s1"></div>
                   <div class="col s2">
-                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
+                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "75", height: "75px", margin: "3px"}} /> 
                   </div>
                   <div id="FourthSad" data-score="3" onclick="captureScore()" class="col s2">
-                    <img src={require("../images/sad2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
+                    <img src={require("../images/sad2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="A little Sad" />
                   </div>
                   <div id="FourthNeutral" data-score="5" onclick="captureScore()" class="col s2">
-                    <img src={require("../images/neutral2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
+                    <img src={require("../images/neutral2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="Neutral" />
                   </div>
                   <div id="FourthHappy" data-score="7" onclick="captureScore()" class="col s2">
-                    <img src={require("../images/happy2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
+                    <img src={require("../images/happy2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="A bit Happy" />
                   </div>
                   <div id="FourthHappiest" data-score="10" onclick="captureScore()"class="col s2">
-                    <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
+                    <img src={require("../images/happiest2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="Happiest" />
                   </div>
                   <div className="col s1"> </div>
                 </div>
@@ -144,19 +144,19 @@ return (
                 <div id="FifthSaddest" data-score="0"onclick="captureScore()" class="row">
                   <div class="col s1"></div>
                   <div class="col s2">
-                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "125", height: "125px", margin: "3px"}} /> 
+                    <img src={require("../images/saddest2.JPG")} alt="Saddest" style={{width: "75", height: "75px", margin: "3px"}} /> 
                   </div>
                   <div id="FifthSad" data-score="3" onclick="captureScore()" class="col s2">
-                    <img src={require("../images/sad2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A little Sad" />
+                    <img src={require("../images/sad2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="A little Sad" />
                   </div>
                   <div id="FifthNeutral" data-score="5" onclick="captureScore()"class="col s2">
-                    <img src={require("../images/neutral2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Neutral" />
+                    <img src={require("../images/neutral2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="Neutral" />
                   </div>
                   <div id="FifthHappy" data-score="7" onclick="captureScore()" class="col s2">
-                    <img src={require("../images/happy2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="A bit Happy" />
+                    <img src={require("../images/happy2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="A bit Happy" />
                   </div>
                   <div id="FifthHappiest" data-score="10" onclick="captureScore()"class="col s2">
-                    <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
+                    <img src={require("../images/happiest2.JPG")} style={{width: "75", height: "75px", margin: "3px"}} alt="Happiest" />
                   </div>
                   <div className="col s1"> </div>
                 </div>
@@ -173,12 +173,12 @@ return (
                   <div class="col s3"></div>
 
                   <div className="col s2">
-                    <img src={require("../images/thumbsup.JPEG")} alt="Yes" style={{width: "125", height: "125px", margin: "3px"}} /> 
+                    <img src={require("../images/thumbsup.JPEG")} alt="Yes" style={{width: "75", height: "75px", margin: "3px"}} /> 
                   </div>
                   <div id="FifthSad" onclick="captureScore()" class="col s1"></div>
 
                   <div id="FifthNeutral" data-score="0" onclick="captureScore()"class="col s2">
-                    <img src={require("../images/thumbsdown.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="NO" />
+                    <img src={require("../images/thumbsdown.JPEG")} style={{width: "75", height: "75px", margin: "3px"}} alt="NO" />
                   </div>
                   
                   <div className="col s3"> </div>
@@ -238,9 +238,9 @@ export default connect(
   { logoutUser }
 )(Dashboard);
 
-<script>
+{/* <script>
   function captureScore()
   {
     console.log(data-score)
  }
-</script>
+</script> */}
