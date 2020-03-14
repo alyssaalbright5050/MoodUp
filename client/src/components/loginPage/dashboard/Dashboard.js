@@ -238,9 +238,4 @@ export default connect(
   { logoutUser }
 )(Dashboard);
 
-<script>
-  function captureScore()
-  {
-    console.log("you can see this!!")
- }
-</script>
+
