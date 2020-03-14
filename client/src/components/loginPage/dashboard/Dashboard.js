@@ -26,7 +26,7 @@ return (
                 Answer a Few Questions About How You Are Feeling Today: {" "}</p>
   {/* First Question             */}
   <div className="flow-text dark blue-text text-darken-1">
-              <div style={{ height: "1vh" }} class="row">
+              <div style={{ height: "1vh" }} className="row">
                 <div className="col s12 center-align">
                   <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Day Overall:</span>
                 </div>
@@ -48,12 +48,12 @@ return (
                 <div id="OneHappiest" onclick="captureScore()" class="col s2">
                   <img src={require("../images/happiest2.JPG")} style={{ width: "125px", height: "125px", margin: "3px" }} alt="Happiest" />
                 </div>
-                <div class="col s1"> </div>
+                <div className="col s1"> </div>
               </div>
               </div>
 {/* Second Question */}
 <div className="flow-text dark blue-text text-darken-1">
-                <div style={{ height: "1vh" }}class="row">
+                <div style={{ height: "1vh" }}className="row">
                   <div className="col s12 center-align">
                     <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Happiness Level:</span>
                   </div>
@@ -75,13 +75,13 @@ return (
                   <div id="TwoHappiest" onclick="captureScore()"class="col s2">
                     <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
-                  <div class="col s1"> </div>
+                  <div className="col s1"> </div>
                 </div>
                 </div>
 {/* Third Question */}
 
 <div className="flow-text dark blue-text text-darken-1">
-                <div style={{ height: "1vh" }}class="row">
+                <div style={{ height: "1vh" }}className="row">
                   <div className="col s12 center-align">
                     <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Stress Level:</span>
                   </div>
@@ -103,14 +103,14 @@ return (
                   <div id="ThirdHappiest" onclick="captureScore()"class="col s2">
                     <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
-                  <div class="col s1"> </div>
+                  <div className="col s1"> </div>
                 </div>
                 </div>
 
   {/* Fourth Question */}
 
   <div className="flow-text dark blue-text text-darken-1">
-                <div style={{ height: "1vh" }}class="row">
+                <div style={{ height: "1vh" }}className="row">
                   <div className="col s12 center-align">
                     <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Rate Your Energy Level:</span>
                   </div>
@@ -132,14 +132,14 @@ return (
                   <div id="FourthHappiest" onclick="captureScore()"class="col s2">
                     <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
-                  <div class="col s1"> </div>
+                  <div className="col s1"> </div>
                 </div>
                 </div>
 
  {/* Fifth Question */}
 
  <div className="flow-text dark blue-text text-darken-1">
-                <div style={{ height: "1vh" }}class="row">
+                <div style={{ height: "1vh" }}className="row">
                   <div className="col s12 center-align">
                     <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>How Well Did You Sleep Last Night:</span>
                   </div>
@@ -161,13 +161,13 @@ return (
                   <div id="FifthHappiest" onclick="captureScore()"class="col s2">
                     <img src={require("../images/happiest2.JPG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="Happiest" />
                   </div>
-                  <div class="col s1"> </div>
+                  <div className="col s1"> </div>
                 </div>
                 </div>
   {/* Sixth Question            */}
 
   <div className="flow-text dark blue-text text-darken-1">
-                <div style={{ height: "1vh" }}class="row">
+                <div style={{ height: "1vh" }}className="row">
                   <div className="col s12 center-align">
                     <span style={{ fontFamily: "Rum Raisin", fontSize: "30px",color: "blue" }}>Have You Worked Out in the last 24 Hours?</span>
                   </div>
@@ -175,7 +175,7 @@ return (
                 <div id="SixthYes" onclick="captureScore()"class="row">
                   <div class="col s3"></div>
 
-                  <div class="col s2">
+                  <div className="col s2">
                     <img src={require("../images/thumbsup.JPEG")} alt="Yes" style={{width: "125", height: "125px", margin: "3px"}} /> 
                   </div>
                   <div id="FifthSad" onclick="captureScore()" class="col s1"></div>
@@ -184,14 +184,14 @@ return (
                     <img src={require("../images/thumbsdown.JPEG")} style={{width: "125px", height: "125px", margin: "3px"}} alt="NO" />
                   </div>
                   
-                  <div class="col s3"> </div>
+                  <div className="col s3"> </div>
                 </div>
                 </div>
             </h4>
             
-            <div style={{ height: "1vh" }}class="row">  
+            <div style={{ height: "1vh" }}className="row">  
             
-            <div class="col s2">
+            <div className="col s2">
             <button
               style={{
                 width: "150px",
@@ -205,9 +205,9 @@ return (
               Journal
             </button>
             </div>
-            <div class="col s6"></div>
+            <div className="col s6"></div>
 
-            <div class="col s2"> 
+            <div className="col s2"> 
             <button
               style={{
                 width: "150px",
