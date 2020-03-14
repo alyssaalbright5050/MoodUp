@@ -3,7 +3,7 @@ body {
   font-family: 'Rum Raisin';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.55)), url(components/images/emojibg8.JPEG) no-repeat center center fixed;
+  background: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.55)), url(components/loginPage/images/emojibg8.JPEG) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,7 +18,4 @@ code {
   font-family: 'Rum Raisin';
   font-size: 75px;
    text-align: center;
-}
-
-
-  
+};

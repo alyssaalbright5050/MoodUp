@@ -5,12 +5,16 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
-import Navbar from "./components/layout/Navbar";
-import Landing from "./components/layout/Landing";
-import Register from "./components/auth/Register";
-import Login from "./components/auth/Login";
-import PrivateRoute from "./components/private-route/PrivateRoute";
-import Dashboard from "./components/dashboard/Dashboard";
+import Navbar from "./components/loginPage/layout/Navbar";
+import Landing from "./components/loginPage/layout/Landing";
+import Register from "./components/loginPage/auth/Register";
+import Login from "./components/loginPage/auth/Login";
+import PrivateRoute from "./components/loginPage/private-route/PrivateRoute";
+import Dashboard from "./components/loginPage/dashboard/Dashboard";
+import Journal from './components/loginPage/journal/Journal';
+import Entries from './components/loginPage/journal/Entries';
+import Form from './components/loginPage/journal/Form';
+
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -39,8 +43,14 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
+           
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+            </Switch>
+            <Switch>
+            <PrivateRoute exact path="/journal" component={Journal} />
+            <PrivateRoute exact path="/entries" component={Entries} />
+            <PrivateRoute exact path="/form" component={Form} />
             </Switch>
           </div>
         </Router>
