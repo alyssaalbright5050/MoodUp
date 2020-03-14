@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
+
+// import { tracking } from "./tracking.js";
+=======
 //import { tracking } from "./tracking.js";
+
 import "./style.css";
 
 class Dashboard extends Component {
@@ -13,9 +17,9 @@ class Dashboard extends Component {
 render() {
     const { user } = this.props.auth;
 return (
-  <div style={{ background: "White" }}className="container"> 
+  <div style={{ background: "White" }}className="center-align container"> 
       <div style={{ height: "200vh", width: "200vh",
-        margin: "10px 25px", color: "blue" }} className="container valign-wrapper">
+        margin: "10px 25px", color: "blue" }} className="center-align container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
             <h4>
