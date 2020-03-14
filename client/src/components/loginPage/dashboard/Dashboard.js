@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
-import { tracking } from "./tracking.js";
+//import { tracking } from "./tracking.js";
 import "./style.css";
 
 
@@ -243,8 +243,8 @@ export default connect(
 
 //module.exports = Dashboard; 
 
-<script>
+{/* <script>
   function captureScore(){
     console.log("You can see this!!") 
   }
-</script>
+</script> */}
