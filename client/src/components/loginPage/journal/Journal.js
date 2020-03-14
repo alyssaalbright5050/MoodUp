@@ -27,10 +27,11 @@ class App extends Component {
     const { entries } = this.state;
     
     return (
-      <div className="App">
-        <h1>My Journal App</h1>
-        <Entries entryData={entries} removeEntry={this.removeEntry}/>
+      <div className="App container">
+        <h1 style={{paddingBottom: '30px', paddingTop: '10px'}}>Mood Journal</h1>
         <Form handleSubmit={this.handleSubmit}/>
+        <Entries entryData={entries} removeEntry={this.removeEntry}/>
+       
       </div>
     );
   }

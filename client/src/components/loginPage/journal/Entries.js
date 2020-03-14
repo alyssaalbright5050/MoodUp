@@ -1,5 +1,6 @@
 //Learn more or give us feedback
 import React, { Component } from 'react';
+import { Button, Col, Row, Container } from 'reactstrap';
 
 const EntryHeader = () => {
     return <h3>Title</h3>
@@ -8,11 +9,17 @@ const EntryHeader = () => {
 const EntryBody = props => {
     const lines = props.entryData.map((line, index) => {
         return (
+            <Container key={index} className='shadow p-3 mb-5'>
+                <Row>
+                    <Col>
             <div key={index}>
                 <h2>{line.title}</h2>
                 <p>{line.body}</p>
                 <button onClick={() => props.removeEntry(index)}>Delete</button>
             </div>
+            </Col>
+            </Row>
+            </Container>
         )
     })
 
