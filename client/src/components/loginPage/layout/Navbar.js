@@ -11,7 +11,7 @@ class Navbar extends Component {
             <Link
               to="/"
               style={{
-                fontFamily: 'Rum Raisin', fontSize: 40,
+                fontFamily: 'Rum Raisin', fontSize: 40
               }}
               className="col s5 brand-logo center black-text"
             >
