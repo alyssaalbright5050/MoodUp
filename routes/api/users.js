@@ -42,14 +42,6 @@ router.post("/register", (req, res) => {
       }
     });
   });
-
-  //<<<<<<< dev
-  // @route POST api/users/login
-  //=======
-  // @route POST api/users/login
-  //>>>>>>> master
-// @desc Login user and return JWT token
-// @access Public
 router.post("/login", (req, res) => {
   // Form validation
 const { errors, isValid } = validateLoginInput(req.body);
@@ -96,9 +88,4 @@ const email = req.body.email;
     });
   });
 });
-
-  //<<<<<<< dev 
-  //=======
-
-  //>>>>>>> master
   module.exports = router;
