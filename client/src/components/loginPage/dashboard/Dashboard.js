@@ -241,8 +241,8 @@ export default connect(
 
 //module.exports = Dashboard; 
 
-<script>
+{/* <script>
   function captureScore(){
     console.log("You can see this!!") 
   }
-</script>
+</script> */}
