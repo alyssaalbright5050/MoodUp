@@ -2,11 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
-
-// import { tracking } from "./tracking.js";
-//=======
-//import { tracking } from "./tracking.js";
-
 import "./style.css";
 
 class Dashboard extends Component {
@@ -249,13 +244,9 @@ export default connect(
   { logoutUser }
 )(Dashboard);
 
-
-
-
-//module.exports = Dashboard; 
-
-{/* <script>
-  function captureScore(){
-    console.log("You can see this!!") 
-  }
-</script> */}
+<script>
+  function captureScore()
+  {
+    console.log(data-score)
+ }
+</script>
