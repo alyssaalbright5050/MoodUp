@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button, FormGroup, Input, Label } from 'reactstrap';
 
 class Form extends Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class Form extends Component {
     }
 
     handleChange = event => {
-        const {name, value } = event.target 
+        const { name, value } = event.target
 
         this.setState({
             [name]: value
@@ -26,29 +27,33 @@ class Form extends Component {
     }
 
     render() {
-        const {title, body } = this.state;
+        const { title, body } = this.state;
 
         return (
             <div>
                 <form>
-                    <label>Title</label>
-                        <input 
+                    <FormGroup>
+                        <Label for='title'>Title</Label>
+                        <input
                             placeholder="Enter title"
                             type="text"
                             name="title"
                             id="title"
                             value={title}
                             onChange={this.handleChange} />
-                        <label>Entry</label>
-                        <input 
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for='job'>Entry</Label>                        <label>Entry</label>
+                        <Input
                             placeholder="What's up?"
                             type="textarea"
                             name="body"
                             id="body"
                             value={body}
                             onChange={this.handleChange} />
+                    </FormGroup>
                 </form>
-                <button onClick={this.submitForm}>Submit</button>
+                <Button color='danger' onClick={this.submitForm} size='lg' block>Submit</Button>
             </div>
         )
     }
