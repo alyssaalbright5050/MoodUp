@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Button, Col, Row, Container } from 'reactstrap';
 const EntryHeader = () => {
-    return <h3>Title</h3>
+    return <h2>My Entries</h2>
 }
 
 const EntryBody = props => {
