@@ -35,7 +35,7 @@ const Entries = (props) => {
 
     return (
         <div>
-            <h2>My Entries</h2>
+            <h2 style={{paddingTop: '20px', paddingBottom: '20px'}}></h2>
 
             <EntryHeader />
             <EntryBody entryData={entryData} removeEntry={removeEntry} />
