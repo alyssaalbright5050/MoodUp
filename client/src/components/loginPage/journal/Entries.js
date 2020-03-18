@@ -1,4 +1,4 @@
-//Learn more or give us feedback
+
 import React, { Component } from 'react';
 import { Button, Col, Row, Container } from 'reactstrap';
 const EntryHeader = () => {
@@ -12,8 +12,9 @@ const EntryBody = props => {
                 <Row>
                     <Col>
                         <h2>{line.title}</h2>
+                        <small>{Date()}</small>
                         <p>{line.body}</p>
-                        <Button onClick={() => props.removeEntry(index)}>Delete</Button>
+                        <Button onClick={() => props.removeEntry(index)} color='primary'>Delete</Button>
                     </Col>
                 </Row>
             </Container>
