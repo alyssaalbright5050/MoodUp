@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
+
+// import { tracking } from "./tracking.js";
+
+
 import "./style.css";
 
 class Dashboard extends Component {
@@ -43,21 +47,25 @@ class Dashboard extends Component {
   render() {
     const { user } = this.props.auth;
     return (
-      <div style={{ background: "White" }} className="center-align container">
+      <div style={{display: 'flex', justifyContent: 'center', background: "White",fontFamily: "Rum Raisin", fontSize: "60px", }} className="center-align container">
         <div
           style={{
-            height: "155vh",
+            height: "135vh",
+            display: 'flex', 
+            justifyContent: 'center',
             width: "135vh",
             margin: "5px",
-            color: "blue"
-          }}
-          className="center-align container valign-wrapper"
-        >
+            color: "blue",
+            fontFamily: "Rum Raisin",
+            fontSize: "60px",
+            }}
+
+          className="center-align container valign-wrapper" >
           <div className="row">
             <div className="col s12 center-align">
               <h4>
                 <b>Hey there,</b> {user.name.split(" ")[0]}
-                <p className="flow-text black-text text-darken-1">
+                <p className="flow-text black-text text-darken-1" style={{ fontFamily: "Rum Raisin", fontSize: "40px",}}>
                   Answer a Few Questions About How You Are Feeling Today:{" "}
                 </p>
                 {/* First Question             */}
@@ -68,7 +76,8 @@ class Dashboard extends Component {
                         style={{
                           fontFamily: "Rum Raisin",
                           fontSize: "30px",
-                          color: "blue"
+                          color: "blue",
+                          marginBottom: "5px"
                         }}
                       >
                         Rate Your Day Overall:
@@ -468,7 +477,9 @@ class Dashboard extends Component {
                       width: "150px",
                       borderRadius: "3px",
                       letterSpacing: "1.5px",
-                      marginTop: "1rem"
+                      marginTop: "1rem",
+                      fontFamily: "Rum Raisin",
+                      fontSize: "30px",
                     }}
                     onClick={this.computeScore}
                     className="btn btn-large waves-effect waves-light hoverable blue accent-3"
@@ -484,7 +495,9 @@ class Dashboard extends Component {
                       width: "150px",
                       borderRadius: "3px",
                       letterSpacing: "1.5px",
-                      marginTop: "1rem"
+                      marginTop: "1rem",
+                      fontFamily: "Rum Raisin",
+                      fontSize: "30px",
                     }}
                     onClick={this.onLogoutClick}
                     className="btn btn-large waves-effect waves-light hoverable blue accent-3"
@@ -507,4 +520,14 @@ Dashboard.propTypes = {
 const mapStateToProps = state => ({
   auth: state.auth
 });
-export default connect(mapStateToProps, { logoutUser })(Dashboard);
+export default connect(
+  mapStateToProps,
+  { logoutUser }
+)(Dashboard);
+
+
+
+
+
+
+
