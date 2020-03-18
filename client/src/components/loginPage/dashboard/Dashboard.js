@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
+
+
+
 import "./style.css";
 
 class Dashboard extends Component {
@@ -453,4 +456,14 @@ Dashboard.propTypes = {
 const mapStateToProps = state => ({
   auth: state.auth
 });
-export default connect(mapStateToProps, { logoutUser })(Dashboard);
+export default connect(
+  mapStateToProps,
+  { logoutUser }
+)(Dashboard);
+
+
+
+
+
+
+
