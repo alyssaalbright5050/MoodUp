@@ -84,9 +84,9 @@ class Dashboard extends Component {
                       </span>
                     </div>
                   </div>
-                  <div id="OneSaddest" class="row">
-                    <div class="col s1"></div>
-                    <div class="col s2">
+                  <div id="OneSaddest" className="row">
+                    <div className="col s1"></div>
+                    <div className="col s2">
                       <img
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
@@ -96,7 +96,7 @@ class Dashboard extends Component {
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
                     </div>
-                    <div id="OneSad" class="col s2">
+                    <div id="OneSad" className="col s2">
                       <img
                         src={require("../images/sad2.JPG")}
                         data-score="3"
@@ -106,7 +106,7 @@ class Dashboard extends Component {
                         alt="A little Sad"
                       />
                     </div>
-                    <div id="OneNeutral" class="col s2">
+                    <div id="OneNeutral" className="col s2">
                       <img
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
@@ -116,7 +116,7 @@ class Dashboard extends Component {
                         alt="Neutral"
                       />
                     </div>
-                    <div id="OneHappy" class="col s2">
+                    <div id="OneHappy" className="col s2">
                       <img
                         src={require("../images/happy2.JPG")}
                         data-score="7"
@@ -126,7 +126,7 @@ class Dashboard extends Component {
                         alt="A bit Happy"
                       />
                     </div>
-                    <div id="OneHappiest" class="col s2">
+                    <div id="OneHappiest" className="col s2">
                       <img
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
@@ -154,9 +154,9 @@ class Dashboard extends Component {
                       </span>
                     </div>
                   </div>
-                  <div id="TwoSaddest" class="row">
-                    <div class="col s1"></div>
-                    <div class="col s2">
+                  <div id="TwoSaddest" className="row">
+                    <div className="col s1"></div>
+                    <div className="col s2">
                       <img
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
@@ -166,7 +166,7 @@ class Dashboard extends Component {
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
                     </div>
-                    <div id="TwoSad" class="col s2">
+                    <div id="TwoSad" className="col s2">
                       <img
                         src={require("../images/sad2.JPG")}
                         data-score="3"
@@ -176,7 +176,7 @@ class Dashboard extends Component {
                         alt="A little Sad"
                       />
                     </div>
-                    <div id="TwoNeutral" class="col s2">
+                    <div id="TwoNeutral" className="col s2">
                       <img
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
@@ -186,7 +186,7 @@ class Dashboard extends Component {
                         alt="Neutral"
                       />
                     </div>
-                    <div id="TwoHappy" class="col s2">
+                    <div id="TwoHappy" className="col s2">
                       <img
                         src={require("../images/happy2.JPG")}
                         data-score="7"
@@ -196,7 +196,7 @@ class Dashboard extends Component {
                         alt="A bit Happy"
                       />
                     </div>
-                    <div id="TwoHappiest" class="col s2">
+                    <div id="TwoHappiest" className="col s2">
                       <img
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
@@ -224,9 +224,9 @@ class Dashboard extends Component {
                       </span>
                     </div>
                   </div>
-                  <div id="ThirdSaddest" class="row">
-                    <div class="col s1"></div>
-                    <div class="col s2">
+                  <div id="ThirdSaddest" className="row">
+                    <div className="col s1"></div>
+                    <div className="col s2">
                       <img
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
@@ -236,7 +236,7 @@ class Dashboard extends Component {
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
                     </div>
-                    <div id="ThirdSad" class="col s2">
+                    <div id="ThirdSad" className="col s2">
                       <img
                         src={require("../images/sad2.JPG")}
                         data-score="3"
@@ -246,7 +246,7 @@ class Dashboard extends Component {
                         alt="A little Sad"
                       />
                     </div>
-                    <div id="ThirdNeutral" class="col s2">
+                    <div id="ThirdNeutral" className="col s2">
                       <img
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
@@ -256,7 +256,7 @@ class Dashboard extends Component {
                         alt="Neutral"
                       />
                     </div>
-                    <div id="ThirdHappy" class="col s2">
+                    <div id="ThirdHappy" className="col s2">
                       <img
                         src={require("../images/happy2.JPG")}
                         data-score="7"
@@ -266,7 +266,7 @@ class Dashboard extends Component {
                         alt="A bit Happy"
                       />
                     </div>
-                    <div id="ThirdHappiest" class="col s2">
+                    <div id="ThirdHappiest" className="col s2">
                       <img
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
@@ -294,9 +294,9 @@ class Dashboard extends Component {
                       </span>
                     </div>
                   </div>
-                  <div id="FourthSaddest" class="row">
-                    <div class="col s1"></div>
-                    <div class="col s2">
+                  <div id="FourthSaddest" className="row">
+                    <div className="col s1"></div>
+                    <div className="col s2">
                       <img
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
@@ -306,7 +306,7 @@ class Dashboard extends Component {
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
                     </div>
-                    <div id="FourthSad" class="col s2">
+                    <div id="FourthSad" className="col s2">
                       <img
                         src={require("../images/sad2.JPG")}
                         data-score="3"
@@ -316,7 +316,7 @@ class Dashboard extends Component {
                         alt="A little Sad"
                       />
                     </div>
-                    <div id="FourthNeutral" class="col s2">
+                    <div id="FourthNeutral" className="col s2">
                       <img
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
@@ -326,7 +326,7 @@ class Dashboard extends Component {
                         alt="Neutral"
                       />
                     </div>
-                    <div id="FourthHappy" class="col s2">
+                    <div id="FourthHappy" className="col s2">
                       <img
                         src={require("../images/happy2.JPG")}
                         data-score="7"
@@ -336,7 +336,7 @@ class Dashboard extends Component {
                         alt="A bit Happy"
                       />
                     </div>
-                    <div id="FourthHappiest" class="col s2">
+                    <div id="FourthHappiest" className="col s2">
                       <img
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
@@ -364,9 +364,9 @@ class Dashboard extends Component {
                       </span>
                     </div>
                   </div>
-                  <div id="FifthSaddest" class="row">
-                    <div class="col s1"></div>
-                    <div class="col s2">
+                  <div id="FifthSaddest" className="row">
+                    <div className="col s1"></div>
+                    <div className="col s2">
                       <img
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
@@ -376,7 +376,7 @@ class Dashboard extends Component {
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
                     </div>
-                    <div id="FifthSad" class="col s2">
+                    <div id="FifthSad" className="col s2">
                       <img
                         src={require("../images/sad2.JPG")}
                         data-score="3"
@@ -386,7 +386,7 @@ class Dashboard extends Component {
                         alt="A little Sad"
                       />
                     </div>
-                    <div id="FifthNeutral" class="col s2">
+                    <div id="FifthNeutral" className="col s2">
                       <img
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
@@ -396,7 +396,7 @@ class Dashboard extends Component {
                         alt="Neutral"
                       />
                     </div>
-                    <div id="FifthHappy" class="col s2">
+                    <div id="FifthHappy" className="col s2">
                       <img
                         src={require("../images/happy2.JPG")}
                         data-score="7"
@@ -406,7 +406,7 @@ class Dashboard extends Component {
                         alt="A bit Happy"
                       />
                     </div>
-                    <div id="FifthHappiest" class="col s2">
+                    <div id="FifthHappiest" className="col s2">
                       <img
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
@@ -454,7 +454,7 @@ class Dashboard extends Component {
                       className="col s1"
                     ></div>
 
-                    <div id="FifthNeutral" class="col s2">
+                    <div id="FifthNeutral" className="col s2">
                       <img
                         src={require("../images/thumbsdown.JPEG")}
                         data-score="0"
