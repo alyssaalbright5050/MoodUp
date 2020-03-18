@@ -9,14 +9,40 @@ import { logoutUser } from "../../../actions/authActions";
 import "./style.css";
 
 class Dashboard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      "scoreObject": {
+        "questionOne": null,
+        "questionTwo": null,
+        "questionThree": null,
+        "questionFour": null,
+        "questionFive": null, 
+        "questionSix": null
+      }
+    };
+  }
   onLogoutClick = e => {
     e.preventDefault();
     this.props.logoutUser();
   };
 
-  captureScore(e) {
-    const score = e.target.getAttribute('data-score')
-    console.log(score);
+  captureScore = e => {
+    const score = e.target.getAttribute("data-score")
+    const id = e.target.getAttribute("data-id")
+    let scoreObjectCopy = JSON.parse(JSON.stringify(this.state.scoreObject));
+
+    scoreObjectCopy[id] = score
+    console.log(scoreObjectCopy);
+    this.setState({"scoreObject": scoreObjectCopy})
+  }
+   computeScore = scoreObject => {
+    var scoreObjectCopy = Object.keys(scoreObject).map(function(key) {
+      return [Number(key), scoreObject[key]];
+    });
+
+    for (var i = 0, sum = 0; i < scoreObjectCopy.length; sum += scoreObjectCopy[i++]);
+    console.log(sum);
   }
   render() {
     const { user } = this.props.auth;
@@ -43,8 +69,8 @@ class Dashboard extends Component {
                   Answer a Few Questions About How You Are Feeling Today:{" "}
                 </p>
                 {/* First Question             */}
-                <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh", marginBottom: "25px" }} className="row">
+                <div className="flow-text dark blue-text text-darken-1" id="questionOne">
+                  <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
@@ -64,7 +90,8 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
-                        onClick= {this.captureScore}
+                        data-id="questionOne"
+                        onClick={this.captureScore}
                         alt="Saddest"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
@@ -74,6 +101,7 @@ class Dashboard extends Component {
                         src={require("../images/sad2.JPG")}
                         data-score="3"
                         onClick={this.captureScore}
+                        data-id="questionOne"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A little Sad"
                       />
@@ -83,6 +111,7 @@ class Dashboard extends Component {
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
                         onClick={this.captureScore}
+                        data-id="questionOne"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Neutral"
                       />
@@ -92,6 +121,7 @@ class Dashboard extends Component {
                         src={require("../images/happy2.JPG")}
                         data-score="7"
                         onClick={this.captureScore}
+                        data-id="questionOne"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A bit Happy"
                       />
@@ -101,6 +131,7 @@ class Dashboard extends Component {
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
                         onClick={this.captureScore}
+                        data-id="questionOne"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Happiest"
                       />
@@ -109,8 +140,8 @@ class Dashboard extends Component {
                   </div>
                 </div>
                 {/* Second Question */}
-                <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh", marginBottom: "25px" }} className="row">
+                <div className="flow-text dark blue-text text-darken-1" id="questionTwo">
+                  <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
@@ -130,6 +161,7 @@ class Dashboard extends Component {
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
                         onClick={this.captureScore}
+                        data-id="questionTwo"
                         alt="Saddest"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
@@ -139,6 +171,7 @@ class Dashboard extends Component {
                         src={require("../images/sad2.JPG")}
                         data-score="3"
                         onClick={this.captureScore}
+                        data-id="questionTwo"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A little Sad"
                       />
@@ -148,6 +181,7 @@ class Dashboard extends Component {
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
                         onClick={this.captureScore}
+                        data-id="questionTwo"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Neutral"
                       />
@@ -157,6 +191,7 @@ class Dashboard extends Component {
                         src={require("../images/happy2.JPG")}
                         data-score="7"
                         onClick={this.captureScore}
+                        data-id="questionTwo"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A bit Happy"
                       />
@@ -166,6 +201,7 @@ class Dashboard extends Component {
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
                         onClick={this.captureScore}
+                        data-id="questionTwo"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Happiest"
                       />
@@ -174,8 +210,8 @@ class Dashboard extends Component {
                   </div>
                 </div>
                 {/* Third Question */}
-                <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh" , marginBottom: "25px" }} className="row">
+                <div className="flow-text dark blue-text text-darken-1" id="questionThree">
+                  <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
@@ -195,6 +231,7 @@ class Dashboard extends Component {
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
                         onClick={this.captureScore}
+                        data-id="questionThree"
                         alt="Saddest"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
@@ -204,6 +241,7 @@ class Dashboard extends Component {
                         src={require("../images/sad2.JPG")}
                         data-score="3"
                         onClick={this.captureScore}
+                        data-id="questionThree"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A little Sad"
                       />
@@ -213,6 +251,7 @@ class Dashboard extends Component {
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
                         onClick={this.captureScore}
+                        data-id="questionThree"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Neutral"
                       />
@@ -222,6 +261,7 @@ class Dashboard extends Component {
                         src={require("../images/happy2.JPG")}
                         data-score="7"
                         onClick={this.captureScore}
+                        data-id="questionThree"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A bit Happy"
                       />
@@ -231,6 +271,7 @@ class Dashboard extends Component {
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
                         onClick={this.captureScore}
+                        data-id="questionThree"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Happiest"
                       />
@@ -239,8 +280,8 @@ class Dashboard extends Component {
                   </div>
                 </div>
                 {/* Fourth Question */}
-                <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh", marginBottom: "25px" }} className="row">
+                <div className="flow-text dark blue-text text-darken-1" id="questionFour">
+                  <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
@@ -260,6 +301,7 @@ class Dashboard extends Component {
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
                         onClick={this.captureScore}
+                        data-id="questionFour"
                         alt="Saddest"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
@@ -269,6 +311,7 @@ class Dashboard extends Component {
                         src={require("../images/sad2.JPG")}
                         data-score="3"
                         onClick={this.captureScore}
+                        data-id="questionFour"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A little Sad"
                       />
@@ -278,6 +321,7 @@ class Dashboard extends Component {
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
                         onClick={this.captureScore}
+                        data-id="questionFour"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Neutral"
                       />
@@ -287,6 +331,7 @@ class Dashboard extends Component {
                         src={require("../images/happy2.JPG")}
                         data-score="7"
                         onClick={this.captureScore}
+                        data-id="questionFour"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A bit Happy"
                       />
@@ -296,6 +341,7 @@ class Dashboard extends Component {
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
                         onClick={this.captureScore}
+                        data-id="questionFour"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Happiest"
                       />
@@ -304,8 +350,8 @@ class Dashboard extends Component {
                   </div>
                 </div>
                 {/* Fifth Question */}
-                <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh", marginBottom: "25px" }} className="row">
+                <div className="flow-text dark blue-text text-darken-1" id="questionFive">
+                  <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
@@ -325,6 +371,7 @@ class Dashboard extends Component {
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
                         onClick={this.captureScore}
+                        data-id="questionFive"
                         alt="Saddest"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
@@ -334,6 +381,7 @@ class Dashboard extends Component {
                         src={require("../images/sad2.JPG")}
                         data-score="3"
                         onClick={this.captureScore}
+                        data-id="questionFive"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A little Sad"
                       />
@@ -343,6 +391,7 @@ class Dashboard extends Component {
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
                         onClick={this.captureScore}
+                        data-id="questionFive"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Neutral"
                       />
@@ -352,6 +401,7 @@ class Dashboard extends Component {
                         src={require("../images/happy2.JPG")}
                         data-score="7"
                         onClick={this.captureScore}
+                        data-id="questionFive"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A bit Happy"
                       />
@@ -361,6 +411,7 @@ class Dashboard extends Component {
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
                         onClick={this.captureScore}
+                        data-id="questionFive"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Happiest"
                       />
@@ -369,8 +420,8 @@ class Dashboard extends Component {
                   </div>
                 </div>
                 {/* Sixth Question            */}
-                <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh", marginBottom: "25px" }} className="row">
+                <div className="flow-text dark blue-text text-darken-1" id="questionSix">
+                  <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
@@ -391,6 +442,7 @@ class Dashboard extends Component {
                         src={require("../images/thumbsup.JPEG")}
                         data-score="10"
                         onClick={this.captureScore}
+                        data-id="questionSix"
                         alt="Yes"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
@@ -398,6 +450,7 @@ class Dashboard extends Component {
                     <div
                       id="FifthSad"
                       onClick={this.captureScore}
+                      data-id="questionSix"
                       className="col s1"
                     ></div>
 
@@ -405,7 +458,8 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/thumbsdown.JPEG")}
                         data-score="0"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
+                        data-id="questionSix"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="NO"
                       />
@@ -427,10 +481,10 @@ class Dashboard extends Component {
                       fontFamily: "Rum Raisin",
                       fontSize: "30px",
                     }}
-                    onClick={this.onJournalClick}
+                    onClick={this.computeScore}
                     className="btn btn-large waves-effect waves-light hoverable blue accent-3"
                   >
-                    Journal
+                    Submit
                   </button>
                 </div>
                 <div className="col s6"></div>
