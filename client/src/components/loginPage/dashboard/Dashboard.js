@@ -399,7 +399,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/thumbsdown.JPEG")}
                         data-score="0"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="NO"
                       />
