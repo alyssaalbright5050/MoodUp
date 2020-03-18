@@ -55,7 +55,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
-                        onClick="captureScore()"
+                        onClick= {this.captureScore}
                         alt="Saddest"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
@@ -64,7 +64,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/sad2.JPG")}
                         data-score="3"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A little Sad"
                       />
@@ -73,7 +73,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Neutral"
                       />
@@ -82,7 +82,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/happy2.JPG")}
                         data-score="7"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A bit Happy"
                       />
@@ -91,7 +91,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Happiest"
                       />
@@ -120,7 +120,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         alt="Saddest"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
@@ -129,7 +129,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/sad2.JPG")}
                         data-score="3"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A little Sad"
                       />
@@ -138,7 +138,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Neutral"
                       />
@@ -147,7 +147,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/happy2.JPG")}
                         data-score="7"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A bit Happy"
                       />
@@ -156,7 +156,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Happiest"
                       />
@@ -185,7 +185,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         alt="Saddest"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
@@ -194,7 +194,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/sad2.JPG")}
                         data-score="3"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A little Sad"
                       />
@@ -203,7 +203,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Neutral"
                       />
@@ -212,7 +212,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/happy2.JPG")}
                         data-score="7"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A bit Happy"
                       />
@@ -221,7 +221,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Happiest"
                       />
@@ -250,7 +250,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         alt="Saddest"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
@@ -259,7 +259,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/sad2.JPG")}
                         data-score="3"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A little Sad"
                       />
@@ -268,7 +268,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Neutral"
                       />
@@ -277,7 +277,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/happy2.JPG")}
                         data-score="7"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A bit Happy"
                       />
@@ -286,7 +286,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Happiest"
                       />
@@ -315,7 +315,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/saddest2.JPG")}
                         data-score="0"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         alt="Saddest"
                         style={{ width: "75", height: "75px", margin: "3px" }}
                       />
@@ -324,7 +324,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/sad2.JPG")}
                         data-score="3"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A little Sad"
                       />
@@ -333,7 +333,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/neutral2.JPG")}
                         data-score="5"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Neutral"
                       />
@@ -342,7 +342,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/happy2.JPG")}
                         data-score="7"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="A bit Happy"
                       />
@@ -351,7 +351,7 @@ class Dashboard extends Component {
                       <img
                         src={require("../images/happiest2.JPG")}
                         data-score="10"
-                        onClick="captureScore()"
+                        onClick={this.captureScore}
                         style={{ width: "75", height: "75px", margin: "3px" }}
                         alt="Happiest"
                       />
