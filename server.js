@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-//const path = require("path");
+const path = require("path");
 const app = express();
 
 const passport = require("passport");
@@ -33,10 +33,6 @@ require("./config/passport")(passport);
 app.use("/api/users", users);
 
 app.use("/", htmlRoutes)
-
-//if (process.env.NODE_ENV === 'production') {
-//app.use(express.static(path.join(__dirname, 'client')));
-//}
 
 if (process.env.NODE_ENV === 'production') {
   // Exprees will serve up production assets
