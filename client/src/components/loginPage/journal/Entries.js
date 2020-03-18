@@ -1,6 +1,6 @@
 //Learn more or give us feedback
 import React, { Component } from 'react';
-
+import { Button, Col, Row, Container } from 'reactstrap';
 const EntryHeader = () => {
     return <h3>Title</h3>
 }
@@ -8,35 +8,40 @@ const EntryHeader = () => {
 const EntryBody = props => {
     const lines = props.entryData.map((line, index) => {
         return (
-            <div key={index}>
-                <h2>{line.title}</h2>
-                <p>{line.body}</p>
-                <button onClick={() => props.removeEntry(index)}>Delete</button>
-            </div>
+            <Container key={index} className="shadow p-3 mb-5 bg-white rounded">
+                <Row>
+                    <Col>
+                        <h2>{line.title}</h2>
+                        <p>{line.body}</p>
+                        <Button onClick={() => props.removeEntry(index)}>Delete</Button>
+                    </Col>
+                </Row>
+            </Container>
+
         )
     })
 
     return (
         <div>
-            {lines}  
+            {lines}
         </div>
     )
 }
 
 const Entries = (props) => {
-    
-        const { entryData, removeEntry } = props;
 
-        return (
-            <div>
-                <h2>My Entries</h2>
-               
-                <EntryHeader />
-                <EntryBody entryData={entryData} removeEntry={removeEntry}/>
-            </div>
+    const { entryData, removeEntry } = props;
 
-        )
-    
+    return (
+        <div>
+            <h2>My Entries</h2>
+
+            <EntryHeader />
+            <EntryBody entryData={entryData} removeEntry={removeEntry} />
+        </div>
+
+    )
+
 }
 
-export default Entries
+export default Entries;
