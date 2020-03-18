@@ -17,7 +17,7 @@ render() {
     const { user } = this.props.auth;
 return (
   <div style={{ background: "White" }}className="center-align container"> 
-      <div style={{ height: "200vh", width: "200vh",
+      <div style={{ height: "155vh", width: "135vh",
         margin: "10px 25px", color: "blue" }} className="center-align container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
