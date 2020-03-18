@@ -1,7 +1,6 @@
 //Learn more or give us feedback
 import React, { Component } from 'react';
 import { Button, Col, Row, Container } from 'reactstrap';
-
 const EntryHeader = () => {
     return <h3>Title</h3>
 }
@@ -25,25 +24,25 @@ const EntryBody = props => {
 
     return (
         <div>
-            {lines}  
+            {lines}
         </div>
     )
 }
 
 const Entries = (props) => {
-    
-        const { entryData, removeEntry } = props;
 
-        return (
-            <div>
-                <h2>My Entries</h2>
-               
-                <EntryHeader />
-                <EntryBody entryData={entryData} removeEntry={removeEntry}/>
-            </div>
+    const { entryData, removeEntry } = props;
 
-        )
-    
+    return (
+        <div>
+            <h2>My Entries</h2>
+
+            <EntryHeader />
+            <EntryBody entryData={entryData} removeEntry={removeEntry} />
+        </div>
+
+    )
+
 }
 
-export default Entries
+export default Entries;
