@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
 
+// import { tracking } from "./tracking.js";
 
 
 import "./style.css";
@@ -20,32 +21,37 @@ class Dashboard extends Component {
   render() {
     const { user } = this.props.auth;
     return (
-      <div style={{ background: "White" }} className="center-align container">
+      <div style={{display: 'flex', justifyContent: 'center', background: "White",fontFamily: "Rum Raisin", fontSize: "60px", }} className="center-align container">
         <div
           style={{
-            height: "155vh",
+            height: "135vh",
+            display: 'flex', 
+            justifyContent: 'center',
             width: "135vh",
             margin: "5px",
-            color: "blue"
-          }}
-          className="center-align container valign-wrapper"
-        >
+            color: "blue",
+            fontFamily: "Rum Raisin",
+            fontSize: "60px",
+            }}
+
+          className="center-align container valign-wrapper" >
           <div className="row">
             <div className="col s12 center-align">
               <h4>
                 <b>Hey there,</b> {user.name.split(" ")[0]}
-                <p className="flow-text black-text text-darken-1">
+                <p className="flow-text black-text text-darken-1" style={{ fontFamily: "Rum Raisin", fontSize: "40px",}}>
                   Answer a Few Questions About How You Are Feeling Today:{" "}
                 </p>
                 {/* First Question             */}
                 <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh" }} className="row">
+                  <div style={{ height: "1vh", marginBottom: "25px" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
                           fontFamily: "Rum Raisin",
                           fontSize: "30px",
-                          color: "blue"
+                          color: "blue",
+                          marginBottom: "5px"
                         }}
                       >
                         Rate Your Day Overall:
@@ -104,7 +110,7 @@ class Dashboard extends Component {
                 </div>
                 {/* Second Question */}
                 <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh" }} className="row">
+                  <div style={{ height: "1vh", marginBottom: "25px" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
@@ -169,7 +175,7 @@ class Dashboard extends Component {
                 </div>
                 {/* Third Question */}
                 <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh" }} className="row">
+                  <div style={{ height: "1vh" , marginBottom: "25px" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
@@ -234,7 +240,7 @@ class Dashboard extends Component {
                 </div>
                 {/* Fourth Question */}
                 <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh" }} className="row">
+                  <div style={{ height: "1vh", marginBottom: "25px" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
@@ -299,7 +305,7 @@ class Dashboard extends Component {
                 </div>
                 {/* Fifth Question */}
                 <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh" }} className="row">
+                  <div style={{ height: "1vh", marginBottom: "25px" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
@@ -364,7 +370,7 @@ class Dashboard extends Component {
                 </div>
                 {/* Sixth Question            */}
                 <div className="flow-text dark blue-text text-darken-1">
-                  <div style={{ height: "1vh" }} className="row">
+                  <div style={{ height: "1vh", marginBottom: "25px" }} className="row">
                     <div className="col s12 center-align">
                       <span
                         style={{
@@ -417,7 +423,9 @@ class Dashboard extends Component {
                       width: "150px",
                       borderRadius: "3px",
                       letterSpacing: "1.5px",
-                      marginTop: "1rem"
+                      marginTop: "1rem",
+                      fontFamily: "Rum Raisin",
+                      fontSize: "30px",
                     }}
                     onClick={this.onJournalClick}
                     className="btn btn-large waves-effect waves-light hoverable blue accent-3"
@@ -433,7 +441,9 @@ class Dashboard extends Component {
                       width: "150px",
                       borderRadius: "3px",
                       letterSpacing: "1.5px",
-                      marginTop: "1rem"
+                      marginTop: "1rem",
+                      fontFamily: "Rum Raisin",
+                      fontSize: "30px",
                     }}
                     onClick={this.onLogoutClick}
                     className="btn btn-large waves-effect waves-light hoverable blue accent-3"

@@ -2,6 +2,14 @@
      transform: scale(1.1);
  }
 
+ .row .col{
+   float: none !important;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+
+
  /* :flow-text {
     fontFamily: "Rum Raisin" fontSize: "50px";
  } */
