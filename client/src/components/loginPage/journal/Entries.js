@@ -1,8 +1,8 @@
-//Learn more or give us feedback
+
 import React, { Component } from 'react';
 import { Button, Col, Row, Container } from 'reactstrap';
 const EntryHeader = () => {
-    return <h3>Title</h3>
+    return <h2>My Entries</h2>
 }
 
 const EntryBody = props => {
@@ -12,8 +12,9 @@ const EntryBody = props => {
                 <Row>
                     <Col>
                         <h2>{line.title}</h2>
+                        <small>{Date()}</small>
                         <p>{line.body}</p>
-                        <Button onClick={() => props.removeEntry(index)}>Delete</Button>
+                        <Button onClick={() => props.removeEntry(index)} color='primary'>Delete</Button>
                     </Col>
                 </Row>
             </Container>
@@ -34,7 +35,7 @@ const Entries = (props) => {
 
     return (
         <div>
-            <h2>My Entries</h2>
+            <h2 style={{paddingTop: '20px', paddingBottom: '20px'}}></h2>
 
             <EntryHeader />
             <EntryBody entryData={entryData} removeEntry={removeEntry} />
