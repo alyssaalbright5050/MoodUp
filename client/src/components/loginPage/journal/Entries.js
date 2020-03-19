@@ -8,10 +8,10 @@ const EntryHeader = () => {
 const EntryBody = props => {
     const lines = props.entryData.map((line, index) => {
         return (
-            <Container key={index} className='shadow p-3 mb-5'>
+            <Container style={{ color: "black",fontFamily: "Rum Raisin", fontSize: "20px", }} key={index} className='shadow p-3 mb-5'>
                 <Row>
                     <Col>
-                        <div key={index}>
+                        <div style={{ color: "black",fontFamily: "Rum Raisin", fontSize: "20px", }} key={index}>
                             <h2>{line.title}</h2>
                             <p>{line.body}</p>
                             <Button onClick={() => props.removeEntry(index)}>Delete</Button>
