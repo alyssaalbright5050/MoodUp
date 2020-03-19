@@ -27,7 +27,7 @@ class App extends Component {
     const { entries } = this.state;
     
     return (
-      <div className="App container">
+      <div style={{ background: "White",fontFamily: "Rum Raisin", fontSize: "30px", justifyContent: 'center' }}className="App container">
         <h1 style={{paddingBottom: '30px', paddingTop: '10px'}}>Mood Journal</h1>
         <Form handleSubmit={this.handleSubmit}/>
         <Entries entryData={entries} removeEntry={this.removeEntry}/>
