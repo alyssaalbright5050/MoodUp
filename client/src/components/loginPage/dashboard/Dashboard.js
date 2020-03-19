@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
-
 // import { tracking } from "./tracking.js";
 
 
@@ -40,9 +39,8 @@ class Dashboard extends Component {
     var scoreObjectCopy = Object.keys(scoreObject).map(function(key) {
       return [Number(key), scoreObject[key]];
     });
-
     for (var i = 0, sum = 0; i < scoreObjectCopy.length; sum += scoreObjectCopy[i++]);
-    console.log(sum);
+    alert(scoreObjectCopy);
   }
   render() {
     const { user } = this.props.auth;
