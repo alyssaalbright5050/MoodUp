@@ -30,11 +30,11 @@ class Form extends Component {
         const { title, body } = this.state;
 
         return (
-            <div>
+            <div> 
                 <form>
                     <FormGroup>
-                        <Label for='title'>Title</Label>
-                        <input
+                        <Label style={{ color: "black",fontFamily: "Rum Raisin", fontSize: "20px", }} for='title'>Title</Label>
+                        <input style={{ outlineColor: "black",fontFamily: "Rum Raisin", fontSize: "20px"}}
                             placeholder="Enter title"
                             type="text"
                             name="title"
@@ -43,9 +43,9 @@ class Form extends Component {
                             onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
-                        <Label for='job'>Entry</Label>                        <label>Entry</label>
-                        <Input
-                            placeholder="What's up?"
+                        <Label style={{ color: "black",fontFamily: "Rum Raisin", fontSize: "20px", }} for='job'>Entry</Label>                       
+                        <Input style={{ outlineColor: "black",fontFamily: "Rum Raisin", fontSize: "20px", }}
+                            placeholder="Jot down how you are feeling today?"
                             type="textarea"
                             name="body"
                             id="body"
