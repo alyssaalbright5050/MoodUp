@@ -33,7 +33,7 @@ class Dashboard extends Component {
     this.setState({ scoreObject: scoreObjectCopy });
   };
   computeScore = scoreObject => {
-    var scoreObjectCopy = Object.keys(scoreObject).map(function(key) {
+    var scoreObjectCopy = Object.values(scoreObject).map(function(key) {
       return [Number(key), scoreObject[key]];
     });
     for (
@@ -41,15 +41,15 @@ class Dashboard extends Component {
       i < scoreObjectCopy.length;
       sum += scoreObjectCopy[i++]
     );
-    const result = Object.values(scoreObjectCopy);
-    console.log(result);
-
-    var CircularJSON = require('circular-json');
     
+    var CircularJSON = require('circular-json');
+
     var displayBox = document.createElement("h3");
-    displayBox.innerHTML = CircularJSON.stringify(result);
+    displayBox.innerHTML = CircularJSON.stringify(scoreObjectCopy);
     var listname = document.getElementById("root");
     listname.appendChild(displayBox);
+
+    console.log(scoreObjectCopy);    
   };
 
   render() {
