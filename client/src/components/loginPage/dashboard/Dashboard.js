@@ -487,7 +487,29 @@ class Dashboard extends Component {
                     Submit
                   </button>
                 </div>
-                <div className="col s6"></div>
+
+                <div className="col s2"></div>
+
+
+                <div className="col s2">
+                  <button
+                    style={{
+                      width: "150px",
+                      borderRadius: "3px",
+                      letterSpacing: "1.5px",
+                      marginTop: "1rem",
+                      fontFamily: "Rum Raisin",
+                      fontSize: "30px",
+                    }}
+                    onClick={this.onJournalClick}
+                    className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                  >
+                    Journal
+                  </button>
+                </div>
+
+
+                <div className="col s2"></div>
 
                 <div className="col s2">
                   <button
