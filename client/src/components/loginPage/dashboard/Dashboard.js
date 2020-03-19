@@ -2,22 +2,19 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
-// import { tracking } from "./tracking.js";
-
-
 import "./style.css";
 
 class Dashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      "scoreObject": {
-        "questionOne": null,
-        "questionTwo": null,
-        "questionThree": null,
-        "questionFour": null,
-        "questionFive": null, 
-        "questionSix": null
+      scoreObject: {
+        questionOne: null,
+        questionTwo: null,
+        questionThree: null,
+        questionFour: null,
+        questionFive: null,
+        questionSix: null
       }
     };
   }
@@ -27,47 +24,75 @@ class Dashboard extends Component {
   };
 
   captureScore = e => {
-    const score = e.target.getAttribute("data-score")
-    const id = e.target.getAttribute("data-id")
+    const score = e.target.getAttribute("data-score");
+    const id = e.target.getAttribute("data-id");
     let scoreObjectCopy = JSON.parse(JSON.stringify(this.state.scoreObject));
 
-    scoreObjectCopy[id] = score
+    scoreObjectCopy[id] = score;
     console.log(scoreObjectCopy);
-    this.setState({"scoreObject": scoreObjectCopy})
-  }
-   computeScore = scoreObject => {
+    this.setState({ scoreObject: scoreObjectCopy });
+  };
+  computeScore = scoreObject => {
     var scoreObjectCopy = Object.keys(scoreObject).map(function(key) {
       return [Number(key), scoreObject[key]];
     });
-    for (var i = 0, sum = 0; i < scoreObjectCopy.length; sum += scoreObjectCopy[i++]);
-    alert(scoreObjectCopy);
-  }
+    for (
+      var i = 0, sum = 0;
+      i < scoreObjectCopy.length;
+      sum += scoreObjectCopy[i++]
+    );
+    const result = Object.values(scoreObjectCopy);
+    console.log(result);
+
+    var CircularJSON = require('circular-json');
+    
+    var displayBox = document.createElement("h3");
+    displayBox.innerHTML = CircularJSON.stringify(result);
+    var listname = document.getElementById("root");
+    listname.appendChild(displayBox);
+  };
+
   render() {
     const { user } = this.props.auth;
     return (
-      <div style={{display: 'flex', justifyContent: 'center', background: "White",fontFamily: "Rum Raisin", fontSize: "60px", }} className="center-align container">
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          background: "White",
+          fontFamily: "Rum Raisin",
+          fontSize: "60px"
+        }}
+        className="center-align container"
+      >
         <div
           style={{
             height: "135vh",
-            display: 'flex', 
-            justifyContent: 'center',
+            display: "flex",
+            justifyContent: "center",
             width: "135vh",
             margin: "5px",
             color: "blue",
             fontFamily: "Rum Raisin",
-            fontSize: "60px",
-            }}
-
-          className="center-align container valign-wrapper" >
+            fontSize: "60px"
+          }}
+          className="center-align container valign-wrapper"
+        >
           <div className="row">
             <div className="col s12 center-align">
               <h4>
                 <b>Hey there,</b> {user.name.split(" ")[0]}
-                <p className="flow-text black-text text-darken-1" style={{ fontFamily: "Rum Raisin", fontSize: "40px",}}>
+                <p
+                  className="flow-text black-text text-darken-1"
+                  style={{ fontFamily: "Rum Raisin", fontSize: "40px" }}
+                >
                   Answer a Few Questions About How You Are Feeling Today:{" "}
                 </p>
                 {/* First Question             */}
-                <div className="flow-text dark blue-text text-darken-1" id="questionOne">
+                <div
+                  className="flow-text dark blue-text text-darken-1"
+                  id="questionOne"
+                >
                   <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
@@ -138,7 +163,10 @@ class Dashboard extends Component {
                   </div>
                 </div>
                 {/* Second Question */}
-                <div className="flow-text dark blue-text text-darken-1" id="questionTwo">
+                <div
+                  className="flow-text dark blue-text text-darken-1"
+                  id="questionTwo"
+                >
                   <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
@@ -208,7 +236,10 @@ class Dashboard extends Component {
                   </div>
                 </div>
                 {/* Third Question */}
-                <div className="flow-text dark blue-text text-darken-1" id="questionThree">
+                <div
+                  className="flow-text dark blue-text text-darken-1"
+                  id="questionThree"
+                >
                   <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
@@ -278,7 +309,10 @@ class Dashboard extends Component {
                   </div>
                 </div>
                 {/* Fourth Question */}
-                <div className="flow-text dark blue-text text-darken-1" id="questionFour">
+                <div
+                  className="flow-text dark blue-text text-darken-1"
+                  id="questionFour"
+                >
                   <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
@@ -348,7 +382,10 @@ class Dashboard extends Component {
                   </div>
                 </div>
                 {/* Fifth Question */}
-                <div className="flow-text dark blue-text text-darken-1" id="questionFive">
+                <div
+                  className="flow-text dark blue-text text-darken-1"
+                  id="questionFive"
+                >
                   <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
@@ -418,7 +455,10 @@ class Dashboard extends Component {
                   </div>
                 </div>
                 {/* Sixth Question            */}
-                <div className="flow-text dark blue-text text-darken-1" id="questionSix">
+                <div
+                  className="flow-text dark blue-text text-darken-1"
+                  id="questionSix"
+                >
                   <div style={{ height: "1vh" }} className="row">
                     <div className="col s12 center-align">
                       <span
@@ -477,7 +517,7 @@ class Dashboard extends Component {
                       letterSpacing: "1.5px",
                       marginTop: "1rem",
                       fontFamily: "Rum Raisin",
-                      fontSize: "30px",
+                      fontSize: "30px"
                     }}
                     onClick={this.computeScore}
                     className="btn btn-large waves-effect waves-light hoverable blue accent-3"
@@ -517,7 +557,7 @@ class Dashboard extends Component {
                       letterSpacing: "1.5px",
                       marginTop: "1rem",
                       fontFamily: "Rum Raisin",
-                      fontSize: "30px",
+                      fontSize: "30px"
                     }}
                     onClick={this.onLogoutClick}
                     className="btn btn-large waves-effect waves-light hoverable blue accent-3"
@@ -540,14 +580,4 @@ Dashboard.propTypes = {
 const mapStateToProps = state => ({
   auth: state.auth
 });
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(Dashboard);
-
-
-
-
-
-
-
+export default connect(mapStateToProps, { logoutUser })(Dashboard);
